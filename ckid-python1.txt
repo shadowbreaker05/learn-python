@@ -1,0 +1,393 @@
+                                        #WELCOME TO PYTHON PROGRAMMING
+"""-----------------------------------------------------------------------------------------------------------------
+
+Hi Friends, Am E.S.Adithya (aka Cyberkid) here presenting you with the complete learning module of Python
+Programming. We will be starting from the very basics of the language and then progress on to deal with the
+syntax and then be having a look into the various frameworks available in Python and at last work on a real-
+world application of the Python Language by doing a small project to help you get going with Python :) 
+
+So I would suggest you all to kindly go through my entire course to become a Good Python Programmmer!
+
+Prerequisites: No knowledge of Python is required prior to reading the content provided here
+...It's totally made with the thought that the person who's going to read this is a total newbie to Python
+So have fun learning Python buddies :)
+
+
+Contact Me: In case of any queries or doubts, Kindly don't hesistate to let me know about it via
+my mail ID thehappymentorkid@gmail.com  ...It's only your reviews and feedbacks that's going to
+encourage me and also help me to make much better courses in future...
+
+And I wish you all GOOD LUCK with this first step you took into the World of Python programming !
+
+-----------------------------------------------------------------------------------------------------------------"""
+
+
+
+#HELLO WORLD
+print("Here We Are Printing A Line")
+
+
+                                        
+#VARIABLES AND DATA TYPES (int, float, string, bool)
+pyint = 13
+print(pyint)
+pyfloat = 13.0 # pyfloat = float(7)
+print(pyfloat)
+pystring = 'hello' # pystring = "hello"
+print(pystring)
+pybool = False
+print(bool(pybool))
+pycomplex = 1+2j
+print(pycomplex)
+
+
+
+#ADVANCED DATA TYPES (list, tuple, set, dictionary)
+pylist = ["ckid","world",".","com",13]
+print(pylist)
+my_range = range(10)
+pylist2 = list(my_range)
+py_names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+# py_freq = py_names.count("Jenny");    print(py_freq);
+# py_names.sort()   #sorts py_names, sort() doesn't return any value
+# name_order = sorted(py_names) #sorted() generates a new sorted list
+# celsius = [0, 10, 15, 32, -5, 27, 3]
+# fahrenheit = [temp*(9/5) + 32 for temp in celsius]
+# print(fahrenheit)
+py_heights = [61, 70, 67, 65]
+names2heights = zip(names, heights)     #zip into object
+print(list(names2heights))      #convert zip object to list 
+# [('Jenny', 61), ('Alexus', 70), ('Sam', 67), ('Grace', 65)]
+pytuple = ("ckid","world",".","com",13)
+print(pytuple)
+pyset = set(['ckid','world','.','com',13])
+print(pyset)
+dict = {}
+dict[0] = "ckid"
+dict[1] = "world"
+dict[3] = "."
+dict[5] = "com"
+dict[6] = "13"
+print(dict)
+
+
+
+#ARITHMETIC OPERATORS
+x=4
+y=2
+print('x+y=',x+y) #add x and y
+print('x-y=',x-y) #subtract y from x
+print('x*y=',x*y) #multiply x and y
+print('x/y=',x/y) #divide x and y
+print('x%y=',x%y) #reminder of division
+print('x**y=',x**y) #x to the power of y
+print('x//y=',x//y) #division without decimal points
+x=15; y=-4; print('x//y=',x//y) #division by negative number
+
+
+
+#COMPARISON OPERATORS
+x=18
+y=54
+print('x>y is',x>y)
+print('x<y is',x<y)
+print('x==y is',x==y) #x equal to y
+print('x!=y is',x!=y) #x not equal to y 
+print('x>=y is',x>=y)
+print('x<=y is',x<=y)
+
+
+
+#LOGICAL OPERATORS
+x=True
+y=False
+print('x and y is',x and y) #logical and
+print('x or y is',x or y) #logical or
+print('not x is',not x) #logical not
+
+
+
+#BITWISE OPERATORS 
+x=60 # In bitwise 60 = 0011 1100
+y=13 # In bitwise 13 = 0000 1101
+z=2 # In bitwise 2 = 0000 0010 
+print('x&y is',x&y) #0011 1100 & 0000 1101 = 0000 1100 =12 [bitwise and]
+print('x|y is',x|y) #0011 1100 | 0000 1101 = 0011 1101 = 61 [bitwise or]
+print('~x is',~x) #~0011 1100 =-61 in 2's complement [bitwise 
+print('x^y is',x^y) #0011 1100 ^ 0000 1101 =0011 0001 = 49
+print('x>>y is',x>>y) #0011 1100 shifted right 2 times
+print('x<<y is',x<<y) #0011 1100 shifted left 2 times
+
+
+
+#MEMBERSHIP OPERATORS
+x='Python Program'
+y={1:'John',2:'9090'}
+print('y' in x)
+print('p' in x) #case sensitive
+print('hello' not in x)
+print(1 in y)
+print('a' in y)
+
+
+
+#IDENTITY OPERATORS 
+x1=5
+y1=5
+x2='Python'
+y2='python'
+x3=[1,2,3]
+y3=[1,2,3]
+print(x1 is y1) #x1 and y1 are integer comparison
+print(x1 is not y1)
+print(x2 is y2)#case sensitive, x2 and y2 are string comparison
+print(x3 is y3) #lists cannot be compared
+
+
+
+#ASSIGNMENT OPERATORS 
+a=5
+a+=5; print(a)
+a-=2; print(a)
+a*=3; print(a)
+a/=12; print(a)
+a**=4; print(a)
+
+
+
+#PRECENDENCE OF OPERATORS
+a=20
+b=10
+c=15
+d=5
+e=0
+e=a+b*c/d
+print("Value of a+b*c/d is ",e)
+e=(a+b)*c/d
+print("Value of (a+b)*c/d is",e)
+e=a+(b*c)/d
+print("Value of a+(b*c)/d is",e)
+e=(a+(b*c))/d
+print("Value of (a+(b*c))/d is",e)
+e=((a+b)*c)/d
+print("Value of ((a+b)*c)/d is",e)
+e=a+b*(c/d)
+print("Value of a+b*(c/d) is",e)
+e=(a+b)*(c/d)
+print("Value of (a+b)*c(c/d) is ",e)
+
+
+
+#STRING FORMATTING(%s, %d, %f, %., %x, %X)
+name = "John"
+age = 23
+DOB = 2000
+print("%s is %d years old." %(name, age))
+print("Year of Birth: %d") % DOB
+import math
+shortpi = 3.141593
+print("{} in Python is actually {} but is rounded off as {shortpi:.2f}".format("Pi value", math.pi))
+
+
+
+#BASIC STRING SLICING OPERATIONS
+pystr="Python Program !"
+print(pystr) #prints complete string
+print(pystr[0]) #indexing - Prints first character of the string
+print(pystr[7:10]) #slicing-Prints characters starting from 7th to 10th
+print(pystr[7:]) #Prints string starting from 7th character
+print(pystr * 2) #Repitition - Prints string two times
+print(pystr + "Ver 3.4") #concatenating- Prints concatenated string
+pystr = "Hello world!"
+print(len(pystr))
+print(pystr.index("o"))
+print(pystr.count("l"))
+print(pystr[3:7:2])
+print(pystr[::-1]) #string reversal 
+pystr2 = pystr.split(" ")
+print(pystr2)
+
+
+
+#String Manipulations
+str = "Python programming"
+str1 = "reg_no:892898!"
+print("Character at location 3 = ", str[2])
+print("Length of the string = ", len(str))
+print("Number of times the given character (m) = ", str.count('m'))
+print("Number of times , blank space =", str.count(' '))
+print("Location of the character (p) =",str.find("p"))
+print("Index of the sub string =",str.index("program"))
+print("Join the character : with each character of the string =",":".join(str))
+print("Join the empty space with each character of the string =",":".join(str))
+print("Concatenation of two strings using + symbol =",str+str1)
+print("String in lower case =",str.lower())
+print("String in upper case =",str.upper())
+print("Title case of the String =",str.title())
+print("Swap the case of the String =",str.swapcase())
+print("Capitalize the String str1 =",str1.capitalize())
+print("Reverse the String =",''.join(reversed(str)))
+print("Split the String on white space =",str.split(" "))
+print("Split the String on character m ",str.split("m"))
+print("Replace old string with new string =",str.replace("Python","Cent OS"))
+print("Replace old string with new string =",str.replace("o","Cent OS"))
+print("Replace old string with new string only 1 time =",str.replace("o","Cent OS",1))
+print("Maximum characters in the string str1 =",max(str1))
+print("Minimum characters in the string str1 =",min(str1))
+print("Padding the string by $ symbol ",str1.ljust(25,'$'))
+print("&" * 10)
+print(str * 3)
+
+
+
+#STRING FUNCTIONS
+str1="DB124"
+print(str1)
+print("Check alphanumeric characters =",str1.isalnum())
+print("Check all are alphabetic characters =",str1.isalpha())       #false, if space
+print("Check if string fully digits =",str1.isdigit())
+print("Check for title words =",str1.istitle())
+print("Check for uppercase characters =",str1.isupper()
+print("Check for lowercase characters =",str1.islower()))
+print("Check for whitespace characters =",str1.isspace())
+print("Check if string ends with character B =",str1.endswith('B'))
+print("Check if string starts with character B =",str1.startswith('B'))
+
+
+
+#CONDITIONS (if, if-else, if-elif-else, nested if)
+age = input ("What's your age = " )
+
+if(age>=60):
+    print ("Sorry! You are a Senior Citizen ")
+else:
+    print("You are selected ")
+    if(age<=18):
+        print("Sorry! You are underaged ")
+    elif(age<0):
+        print("Incorrect Input Given ")
+    else:
+        print("Congrats! You are eligible ")
+
+
+
+#LOOPS(for, while, break, continue)
+for i in '123':
+    print("Welcome" ,i, "times")
+for j in range(5):
+    print(j)
+while a<10:
+    a=a+1
+    print(a)
+
+fruits = ['apple', 'orange', 'banana', 'mango', 'grapes']
+my_fruit = 'banana'
+for fruit in fruits: 
+    if fruit == my_fruit:
+        print("Fruit list contains my fruit")
+        break
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+for age in ages:
+  if age < 21:
+    continue
+  print(age)
+routine = ["eat","sleep","repeat"] 
+for count,ele in enumerate(routine,100): 
+    print count,ele 
+
+
+
+#FUNCTIONS
+def py_welc():
+    print("Hello function!")
+py_welc();
+def py_add(num1,num2):
+    return num1+num2
+pysum = py_add(2,3)
+print(pysum)
+class shape_circle:
+    def __init__(self,data):
+        self.pi = 3.14
+        self.radius = radius
+
+
+
+#CLASSES AND OBJECTS
+class py_class:
+    pin = 2468
+    def py_func(self):
+        print("pin has been changed to 9999")
+        return 9999
+py_obj = py_class()
+print(py_obj.pin)
+newpin = 1357
+py_obj.pin = newpin
+print(py_obj.pin)
+py_obj.pin = py_obj.py_func()
+print(py_obj.pin)
+
+
+
+#FILE HANDLING 
+inputfile = 'sample.txt'
+f = open(inputfile,'r')
+entirefilecontent = f.read()
+oneline = f.readline()
+manylines = f.readlines()
+ f = open('output.txt','w')
+f.write(" We are writing inside the file now")
+f.close()
+file = open("spider.txt")
+print(file.readline()) #read a line and update pointer
+print(file.read()) #read from current position to EOF
+file.close()
+with open("spider.txt") as file: 
+    print(file.readline())  #python autocloses the file
+with open("spider.txt") as file: 
+    for line in file: 
+        print(line.upper()) #line by line in uppercase
+with open("spider.txt") as file: 
+    for line in file: #python autocloses file when WITH used
+        print(line.strip()) #print by ignoring newline character 
+with open("novel.txt", "w") as file:    #default is read-only "r"
+    file.write("It was a dark and stormy night") 
+file = open("spider.txt")
+lines = file.readlines()    #copy file content to a variable
+file.close()
+lines.sort()
+print(lines)
+
+
+
+#COMMON ERRORS IN PYTHON 
+3 = X 	#Syntax Error
+items = [1,3,5]
+	>>item[4]	#Index Error
+mapping = {'a':2, 'b':4}
+	>>mapping['c']	#Key Error
+	>>"year" + 2017  #Type Error
+items.add(7)    #Attribute Error
+	>>print(y)	#Name Error
+	>>5/0	#Zero Division Error
+def greet():
+print("Hello")	#Indentation Error
+	>>9876 ** 6789.5432  #Overflow Error
+def raises_value_error():   #Try and Except Statements
+  try:
+    raise ValueError
+  except ValueError: 
+    print("You raised a ValueError!")
+raises_value_error()
+
+
+
+#IMPORT MODULES AND PACKAGES 
+import module_name 
+from module_name import submodule 
+from module_name import function1_name, function2_name
+from module_name import * 
+
+
+
+#       THAT'S ALL ABOUT PYTHON BASICS, IN NEXT PART WE WILL LEARN ABOUT ADVANCED PYTHON AND PYTHON FRAMEWORKS
+#                                       THANK YOU FOR TAKING UP MY COURSE                                       
